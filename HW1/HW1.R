@@ -2,16 +2,16 @@
 library(ggplot2)
 library(plotly)
 library(dplyr)
-library(htmlwidgets)  # ???¤J htmlwidgets ¥]
+library(htmlwidgets)  # ???ï¿½J htmlwidgets ï¿½]
 Cereal <- read.csv(file = "C:/Users/Trident/Downloads/Cereal.csv")
 
-# ©w??????¶q¦W???
+# ï¿½w??????ï¿½qï¿½W???
 variables <- c("Calories", "Protein", "Fat", "Sodium", "Fiber", "Carbohydrates", "Sugar", "Potassium")
 
-# °²???¦³¥|???¨î³y°Ó¡AÚÌ«O???¨½¦³¥|??????¦â
+# ï¿½ï¿½???ï¿½ï¿½ï¿½|???ï¿½ï¿½yï¿½Ó¡Aï¿½Ì«O???ï¿½ï¿½ï¿½ï¿½ï¿½|??????ï¿½ï¿½
 colors <- c("#E69F00", "#0072B2", "#F0E442", "#56B4E9")
 
-# ¨Ï¥Î for ´`???¥Í¦¨¦}???¥Ü¨C??????¶qªº½c«¬???
+# ï¿½Ï¥ï¿½ for ï¿½`???ï¿½Í¦ï¿½ï¿½}???ï¿½Ü¨C??????ï¿½qï¿½ï¿½ï¿½cï¿½ï¿½???
 for (var in variables) {
   summary_stats <- Cereal %>%
     group_by(Manufacturer) %>%
@@ -26,9 +26,9 @@ for (var in variables) {
     stat_boxplot(geom = "errorbar", width = 0.15, aes(color = "black")) +
     geom_boxplot(size = 0.5, outlier.fill = "white", outlier.color = "white") +
     geom_jitter(aes(fill = "Manufacturer"), width = 0.2, shape = 21, size = 2.5) +
-    scale_fill_manual(values = colors) +  # ¨Ï¥Î­×¥¿¦Zªº???¦â¦V¶q
-    scale_color_manual(values = c("black")) +  # ¨Ï¥Î¶Â¦â§@????????????¦â
-    ggtitle(paste(var, "Distribution by Manufacturer")) +  # §ó§ï??????¥H???¥Ü???«e???¶q
+    scale_fill_manual(values = colors) +  # ï¿½Ï¥Î­×¥ï¿½ï¿½Zï¿½ï¿½???ï¿½ï¿½Vï¿½q
+    scale_color_manual(values = c("black")) +  # ï¿½Ï¥Î¶Â¦ï¿½@????????????ï¿½ï¿½
+    ggtitle(paste(var, "Distribution by Manufacturer")) +  # ï¿½ï¿½ï¿½??????ï¿½H???ï¿½ï¿½???ï¿½e???ï¿½q
     theme_bw() +
     theme(legend.position = "none",
           axis.text.x = element_text(colour = "black", family = "Times", size = 14),
@@ -38,66 +38,14 @@ for (var in variables) {
           plot.title = element_text(family = "Times", size = 15, face = "bold", hjust = 0.5),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank()) +
-    ylab(var) + xlab("Manufacturer")  # ¥æ??? x ©M y ???ªº??????
+    ylab(var) + xlab("Manufacturer")  # ï¿½ï¿½??? x ï¿½M y ???ï¿½ï¿½??????
   
   # ????????? plotly
   plotly_p <- ggplotly(P1)
   
-  # «O¦s???ªí??? HTML ¤å¥ó
+  # ï¿½Oï¿½s???ï¿½ï¿½??? HTML ï¿½ï¿½ï¿½
   saveWidget(plotly_p, file = paste0(var, "_boxplot.html"), selfcontained = TRUE)
   
-  # ???¥Ü???ªí
+  # ???ï¿½ï¿½???ï¿½ï¿½
   print(plotly_p)
 }
-=======
-library(ggplot2)
-library(plotly)
-library(dplyr)
-library(htmlwidgets)  # ???¤J htmlwidgets ¥]
-Cereal <- read.csv(file = "C:/Users/Trident/Downloads/Cereal.csv")
-
-# ©w??????¶q¦W???
-variables <- c("Calories", "Protein", "Fat", "Sodium", "Fiber", "Carbohydrates", "Sugar", "Potassium")
-
-# °²???¦³¥|???¨î³y°Ó¡AÚÌ«O???¨½¦³¥|??????¦â
-colors <- c("#E69F00", "#0072B2", "#F0E442", "#56B4E9")
-
-# ¨Ï¥Î for ´`???¥Í¦¨¦}???¥Ü¨C??????¶qªº½c«¬???
-for (var in variables) {
-  summary_stats <- Cereal %>%
-    group_by(Manufacturer) %>%
-    summarize(
-      Q1 = quantile(get(var), 0.25),
-      Median = median(get(var)),
-      Q3 = quantile(get(var), 0.75),
-      .groups = 'drop'
-    )
-  
-  P1 <- ggplot(Cereal, aes_string(x = "Manufacturer", y = var, fill = "Manufacturer")) +
-    stat_boxplot(geom = "errorbar", width = 0.15, aes(color = "black")) +
-    geom_boxplot(size = 0.5, outlier.fill = "white", outlier.color = "white") +
-    geom_jitter(aes(fill = "Manufacturer"), width = 0.2, shape = 21, size = 2.5) +
-    scale_fill_manual(values = colors) +  # ¨Ï¥Î­×¥¿¦Zªº???¦â¦V¶q
-    scale_color_manual(values = c("black")) +  # ¨Ï¥Î¶Â¦â§@????????????¦â
-    ggtitle(paste(var, "Distribution by Manufacturer")) +  # §ó§ï??????¥H???¥Ü???«e???¶q
-    theme_bw() +
-    theme(legend.position = "none",
-          axis.text.x = element_text(colour = "black", family = "Times", size = 14),
-          axis.text.y = element_text(family = "Times", size = 14, face = "plain"),
-          axis.title.y = element_text(family = "Times", size = 14, face = "plain"),
-          axis.title.x = element_text(family = "Times", size = 14, face = "plain"),
-          plot.title = element_text(family = "Times", size = 15, face = "bold", hjust = 0.5),
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank()) +
-    ylab(var) + xlab("Manufacturer")  # ¥æ??? x ©M y ???ªº??????
-  
-  # ????????? plotly
-  plotly_p <- ggplotly(P1)
-  
-  # «O¦s???ªí??? HTML ¤å¥ó
-  saveWidget(plotly_p, file = paste0(var, "_boxplot.html"), selfcontained = TRUE)
-  
-  # ???¥Ü???ªí
-  print(plotly_p)
-}
->>>>>>> af61e9e0744faedb2b28329fc70677fff6958f7b

@@ -1,41 +1,40 @@
 <<<<<<< HEAD
-# ¦w¸Ë¨Ã¸ü¤J©Ò»Ý®M¥ó
+# ï¿½wï¿½Ë¨Ã¸ï¿½ï¿½Jï¿½Ò»Ý®Mï¿½ï¿½
 install.packages("psych")
 library(psych)
 
-# ¸ü¤J Cereal ¸ê®Æ¶°
+# ï¿½ï¿½ï¿½J Cereal ï¿½ï¿½Æ¶ï¿½
 Cereal <- read.csv("C:/Users/Trident/Downloads/Cereal.csv")
 
-# ©w¸qÅÜ¼Æ¦WºÙ
+# ï¿½wï¿½qï¿½Ü¼Æ¦Wï¿½ï¿½
 variables <- c("Calories", "Protein", "Fat", "Sodium", "Fiber", "Carbohydrates", "Sugar", "Potassium")
 
-# ­pºâ¬ÛÃö¯x°}
+# ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½}
 cor_matrix <- cor(Cereal[variables], use = "complete.obs", method = "pearson")
 
-# ¨Ï¥Î psych ®M¥óªº pairs.panels ¨ç¼Æ¥Í¦¨¬ÛÃö¯x°}ªº´²§G¹Ï¯x°}
+# ï¿½Ï¥ï¿½ psych ï¿½Mï¿½ï¿½ pairs.panels ï¿½ï¿½Æ¥Í¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½Ï¯xï¿½}
 pairs.panels(Cereal[variables], 
-             method = "pearson",  # ¨Ï¥Î¥Öº¸´Ë¬ÛÃö«Y¼Æ
-             hist.col = "#0072B2",  # ª½¤è¹ÏÃC¦â
-             density = TRUE,  # Åã¥Ü±K«×¹Ï
-             ellipses = FALSE)  # Åã¥Ü¬ÛÃö«Y¼Æ¾ò¶ê
+             method = "pearson",  # ï¿½Ï¥Î¥Öºï¿½ï¿½Ë¬ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½
+             hist.col = "#0072B2",  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
+             density = TRUE,  # ï¿½ï¿½Ü±Kï¿½×¹ï¿½
+             ellipses = FALSE)  # ï¿½ï¿½Ü¬ï¿½ï¿½ï¿½ï¿½Yï¿½Æ¾ï¿½ï¿½
 =======
-# ¦w¸Ë¨Ã¸ü¤J©Ò»Ý®M¥ó
+# ï¿½wï¿½Ë¨Ã¸ï¿½ï¿½Jï¿½Ò»Ý®Mï¿½ï¿½
 install.packages("psych")
 library(psych)
 
-# ¸ü¤J Cereal ¸ê®Æ¶°
+# ï¿½ï¿½ï¿½J Cereal ï¿½ï¿½Æ¶ï¿½
 Cereal <- read.csv("C:/Users/Trident/Downloads/Cereal.csv")
 
-# ©w¸qÅÜ¼Æ¦WºÙ
+# ï¿½wï¿½qï¿½Ü¼Æ¦Wï¿½ï¿½
 variables <- c("Calories", "Protein", "Fat", "Sodium", "Fiber", "Carbohydrates", "Sugar", "Potassium")
 
-# ­pºâ¬ÛÃö¯x°}
+# ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½}
 cor_matrix <- cor(Cereal[variables], use = "complete.obs", method = "pearson")
 
-# ¨Ï¥Î psych ®M¥óªº pairs.panels ¨ç¼Æ¥Í¦¨¬ÛÃö¯x°}ªº´²§G¹Ï¯x°}
+# ï¿½Ï¥ï¿½ psych ï¿½Mï¿½ï¿½ pairs.panels ï¿½ï¿½Æ¥Í¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½Ï¯xï¿½}
 pairs.panels(Cereal[variables], 
-             method = "pearson",  # ¨Ï¥Î¥Öº¸´Ë¬ÛÃö«Y¼Æ
-             hist.col = "#0072B2",  # ª½¤è¹ÏÃC¦â
-             density = TRUE,  # Åã¥Ü±K«×¹Ï
-             ellipses = FALSE)  # Åã¥Ü¬ÛÃö«Y¼Æ¾ò¶ê
->>>>>>> af61e9e0744faedb2b28329fc70677fff6958f7b
+             method = "pearson",  # ï¿½Ï¥Î¥Öºï¿½ï¿½Ë¬ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½
+             hist.col = "#0072B2",  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
+             density = TRUE,  # ï¿½ï¿½Ü±Kï¿½×¹ï¿½
+             ellipses = FALSE)  # ï¿½ï¿½Ü¬ï¿½ï¿½ï¿½ï¿½Yï¿½Æ¾ï¿½ï¿½

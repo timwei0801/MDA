@@ -1,53 +1,52 @@
 <<<<<<< HEAD
-# ¸ü¤J©Ò»Ýªº®M¥ó
+# ï¿½ï¿½ï¿½Jï¿½Ò»Ýªï¿½ï¿½Mï¿½ï¿½
 library(plotly)
 
-# ©w¸qÅÜ¼Æ¦WºÙ
+# ï¿½wï¿½qï¿½Ü¼Æ¦Wï¿½ï¿½
 variables <- c("Calories", "Protein", "Fat", "Sodium", "Fiber", "Carbohydrates", "Sugar", "Potassium")
 
-# ¨Ï¥Î plotly ®M¥ó³Ð«Ø¤¬°Ê¦¡´²§G¹Ï¯x°}
+# ï¿½Ï¥ï¿½ plotly ï¿½Mï¿½ï¿½Ð«Ø¤ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½Gï¿½Ï¯xï¿½}
 fig <- plot_ly(
   data = Cereal, 
   type = 'splom',  # scatterplot matrix
-  dimensions = lapply(variables, function(var) list(label = var, values = Cereal[[var]])),  # ³]©w¨C­Óºû«×ªº¼ÐÅÒ©M¼Æ­È
-  color = ~Manufacturer,  # ¥Î¤£¦PÃC¦âªí¥Ü Manufacturer
-  colors = c("#E69F00", "#0072B2", "#F0E442", "#56B4E9"),  # ¦Û­qÃC¦â
-  marker = list(opacity = 0.7, size = 5)  # ½Õ¾ã¼Ð°Oªº³z©ú«×©M¤j¤p
+  dimensions = lapply(variables, function(var) list(label = var, values = Cereal[[var]])),  # ï¿½]ï¿½wï¿½Cï¿½Óºï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ò©Mï¿½Æ­ï¿½
+  color = ~Manufacturer,  # ï¿½Î¤ï¿½ï¿½Pï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ Manufacturer
+  colors = c("#E69F00", "#0072B2", "#F0E442", "#56B4E9"),  # ï¿½Û­qï¿½Cï¿½ï¿½
+  marker = list(opacity = 0.7, size = 5)  # ï¿½Õ¾ï¿½Ð°Oï¿½ï¿½ï¿½zï¿½ï¿½ï¿½×©Mï¿½jï¿½p
 )
 
-# ³]©w layout ¼Ë¦¡
+# ï¿½]ï¿½w layout ï¿½Ë¦ï¿½
 fig <- fig %>% layout(
   title = "Scatterplot Matrix of Cereal Dataset",
-  dragmode = "select",  # ¤ä´©¿ï¾ÜÂIÀ»°Ï°ì
-  hovermode = "closest"  # Åã¥Ü³ÌªñªºÂI¸ê®Æ
+  dragmode = "select",  # ï¿½ä´©ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½Ï°ï¿½
+  hovermode = "closest"  # ï¿½ï¿½Ü³Ìªï¿½ï¿½Iï¿½ï¿½ï¿½
 )
 
-# Åã¥Ü¹Ïªí
+# ï¿½ï¿½Ü¹Ïªï¿½
 fig
 =======
-# ¸ü¤J©Ò»Ýªº®M¥ó
+# ï¿½ï¿½ï¿½Jï¿½Ò»Ýªï¿½ï¿½Mï¿½ï¿½
 library(plotly)
 
-# ©w¸qÅÜ¼Æ¦WºÙ
+# ï¿½wï¿½qï¿½Ü¼Æ¦Wï¿½ï¿½
 variables <- c("Calories", "Protein", "Fat", "Sodium", "Fiber", "Carbohydrates", "Sugar", "Potassium")
 
-# ¨Ï¥Î plotly ®M¥ó³Ð«Ø¤¬°Ê¦¡´²§G¹Ï¯x°}
+# ï¿½Ï¥ï¿½ plotly ï¿½Mï¿½ï¿½Ð«Ø¤ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½Gï¿½Ï¯xï¿½}
 fig <- plot_ly(
   data = Cereal, 
   type = 'splom',  # scatterplot matrix
-  dimensions = lapply(variables, function(var) list(label = var, values = Cereal[[var]])),  # ³]©w¨C­Óºû«×ªº¼ÐÅÒ©M¼Æ­È
-  color = ~Manufacturer,  # ¥Î¤£¦PÃC¦âªí¥Ü Manufacturer
-  colors = c("#E69F00", "#0072B2", "#F0E442", "#56B4E9"),  # ¦Û­qÃC¦â
-  marker = list(opacity = 0.7, size = 5)  # ½Õ¾ã¼Ð°Oªº³z©ú«×©M¤j¤p
+  dimensions = lapply(variables, function(var) list(label = var, values = Cereal[[var]])),  # ï¿½]ï¿½wï¿½Cï¿½Óºï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ò©Mï¿½Æ­ï¿½
+  color = ~Manufacturer,  # ï¿½Î¤ï¿½ï¿½Pï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ Manufacturer
+  colors = c("#E69F00", "#0072B2", "#F0E442", "#56B4E9"),  # ï¿½Û­qï¿½Cï¿½ï¿½
+  marker = list(opacity = 0.7, size = 5)  # ï¿½Õ¾ï¿½Ð°Oï¿½ï¿½ï¿½zï¿½ï¿½ï¿½×©Mï¿½jï¿½p
 )
 
-# ³]©w layout ¼Ë¦¡
+# ï¿½]ï¿½w layout ï¿½Ë¦ï¿½
 fig <- fig %>% layout(
   title = "Scatterplot Matrix of Cereal Dataset",
-  dragmode = "select",  # ¤ä´©¿ï¾ÜÂIÀ»°Ï°ì
-  hovermode = "closest"  # Åã¥Ü³ÌªñªºÂI¸ê®Æ
+  dragmode = "select",  # ï¿½ä´©ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½Ï°ï¿½
+  hovermode = "closest"  # ï¿½ï¿½Ü³Ìªï¿½ï¿½Iï¿½ï¿½ï¿½
 )
 
-# Åã¥Ü¹Ïªí
+# ï¿½ï¿½Ü¹Ïªï¿½
 fig
->>>>>>> af61e9e0744faedb2b28329fc70677fff6958f7b

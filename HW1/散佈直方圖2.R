@@ -1,27 +1,26 @@
 <<<<<<< HEAD
-# ¦w¸Ë¨Ã¸ü¤J©Ò»Ý®M¥ó
+# ï¿½wï¿½Ë¨Ã¸ï¿½ï¿½Jï¿½Ò»Ý®Mï¿½ï¿½
 install.packages("corrplot")
 library(corrplot)
 
-# Ã¸»s¬ÛÃö¯x°}¹Ï
+# Ã¸ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½xï¿½}ï¿½ï¿½
 corrplot(cor_matrix, 
-         method = "color",  # ¨Ï¥ÎÃC¦â¨Óªí¥Ü¬ÛÃö©Ê
-         type = "upper",  # ¥uÅã¥Ü¯x°}ªº¤W¥b³¡
-         tl.col = "black",  # ¼ÐÅÒÃC¦â
-         tl.srt = 45,  # ±ÛÂà¼ÐÅÒ
-         addCoef.col = "black",  # ¦b¹Ï¤WÅã¥Ü¬ÛÃö«Y¼Æ
-         col = colorRampPalette(c("red", "white", "blue"))(200))  # ³]©wÃC¦âº¥¼h
+         method = "color",  # ï¿½Ï¥ï¿½ï¿½Cï¿½ï¿½Óªï¿½ï¿½Ü¬ï¿½ï¿½ï¿½ï¿½ï¿½
+         type = "upper",  # ï¿½uï¿½ï¿½Ü¯xï¿½}ï¿½ï¿½ï¿½Wï¿½bï¿½ï¿½
+         tl.col = "black",  # ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
+         tl.srt = 45,  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         addCoef.col = "black",  # ï¿½bï¿½Ï¤Wï¿½ï¿½Ü¬ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½
+         col = colorRampPalette(c("red", "white", "blue"))(200))  # ï¿½]ï¿½wï¿½Cï¿½âº¥ï¿½h
 =======
-# ¦w¸Ë¨Ã¸ü¤J©Ò»Ý®M¥ó
+# ï¿½wï¿½Ë¨Ã¸ï¿½ï¿½Jï¿½Ò»Ý®Mï¿½ï¿½
 install.packages("corrplot")
 library(corrplot)
 
-# Ã¸»s¬ÛÃö¯x°}¹Ï
+# Ã¸ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½xï¿½}ï¿½ï¿½
 corrplot(cor_matrix, 
-         method = "color",  # ¨Ï¥ÎÃC¦â¨Óªí¥Ü¬ÛÃö©Ê
-         type = "upper",  # ¥uÅã¥Ü¯x°}ªº¤W¥b³¡
-         tl.col = "black",  # ¼ÐÅÒÃC¦â
-         tl.srt = 45,  # ±ÛÂà¼ÐÅÒ
-         addCoef.col = "black",  # ¦b¹Ï¤WÅã¥Ü¬ÛÃö«Y¼Æ
-         col = colorRampPalette(c("red", "white", "blue"))(200))  # ³]©wÃC¦âº¥¼h
->>>>>>> af61e9e0744faedb2b28329fc70677fff6958f7b
+         method = "color",  # ï¿½Ï¥ï¿½ï¿½Cï¿½ï¿½Óªï¿½ï¿½Ü¬ï¿½ï¿½ï¿½ï¿½ï¿½
+         type = "upper",  # ï¿½uï¿½ï¿½Ü¯xï¿½}ï¿½ï¿½ï¿½Wï¿½bï¿½ï¿½
+         tl.col = "black",  # ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
+         tl.srt = 45,  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         addCoef.col = "black",  # ï¿½bï¿½Ï¤Wï¿½ï¿½Ü¬ï¿½ï¿½ï¿½ï¿½Yï¿½ï¿½
+         col = colorRampPalette(c("red", "white", "blue"))(200))  # ï¿½]ï¿½wï¿½Cï¿½âº¥ï¿½h

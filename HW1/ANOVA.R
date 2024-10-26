@@ -158,5 +158,4 @@ for (var in numeric_vars) {
     theme_minimal()
   
   print(p)
->>>>>>> af61e9e0744faedb2b28329fc70677fff6958f7b
 }
