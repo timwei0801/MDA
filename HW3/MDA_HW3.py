@@ -64,7 +64,11 @@ print(pd.DataFrame(eigenvectors, columns=[f"PC{i+1}" for i in range(len(features
 #EX 3.26
 # 使用向量 a = (1,1,1,1,1,1)ᵀ 進行線性轉換
 a = np.ones(len(features))
+<<<<<<< HEAD
 transformed_var = a.T @ S @ a   
+=======
+transformed_var = a.T @ S @ a
+>>>>>>> 711c7eab9ab43afb7bc4c425d65cca9948764e54
 
 print("\n使用向量 a=(1,1,1,1,1,1)ᵀ 線性轉換後的變異數：")
 print(transformed_var)
